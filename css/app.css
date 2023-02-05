@@ -1,9 +1,27 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 img {
   width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Titulo */
@@ -17,23 +35,19 @@ h1 span {
 
 /* Contenedor */
 .contenedor {
-  width: 1200px;
-  margin: 0 auto 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 /* Navegador Principal */
 .contenedor-nav-principal {
-  border-top: 1px solid rgba(0, 0, 0, 0.333);
-  padding: 20px 0 20px 0;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.333);
+  padding: 2rem 0;
 }
 .nav-principal {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-.nav-principal a {
-  text-decoration: none;
-  color: black;
 }
 
 /* hero */
@@ -41,12 +55,24 @@ h1 span {
   background-image: url(../img/principal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 70rem;
 }
 
 /* Categorias */
-.contenedor-categorias {
+.contenedor-categorias h2 {
+  text-align: center;
+}
+.categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 2rem;
+}
+.categoria a {
+  padding: 2rem;
+  text-align: center;
+  display: block;
+}
+.categoria a:hover {
+  background-color: rgb(127, 127, 247);
+  color: white;
 }
