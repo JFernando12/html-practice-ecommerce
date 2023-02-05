@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+
+/* Titulo */
+h1 {
+  color: rgb(127, 127, 247);
+  text-align: center;
+}
+h1 span {
+  color: black;
+}
+
+/* Navegador Principal */
+.contenedor-navegador-principal {
+  border-top: 1px solid rgba(0, 0, 0, 0.333);
+  padding: 20px 0 20px 0;
+}
+.navegador-principal {
+  width: 1200px;
+  margin: 0 auto 0 auto;
+}
+.navegador-principal a {
+  text-decoration: none;
+  color: black;
+}
+
+/* hero */
+.hero {
+  background-image: url(../img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
