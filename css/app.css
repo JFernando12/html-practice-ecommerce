@@ -1,78 +1,70 @@
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   font-size: 1.6rem;
-  font-family: 'Raleway', sans-serif;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-/* Titulo */
-h1 {
-  color: rgb(127, 127, 247);
-  text-align: center;
-}
-h1 span {
-  color: black;
-}
-
-/* Contenedor */
+/*Generals*/
 .contenedor {
   max-width: 120rem;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 100%;
+}
+
+/* Titulos */
+h1,
+h2,
+h3 {
+  color: black;
+  text-align: center;
+  margin: 2rem 0;
+}
+h1 span {
+  color: rgb(70, 70, 243);
+}
 
 /* Navegador Principal */
 .contenedor-nav-principal {
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.333);
+  border-top: 1px solid rgba(0, 0, 0, 0.253);
   padding: 2rem 0;
 }
 .nav-principal {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
-/* hero */
+/* Hero */
 .hero {
-  background-image: url(../img/principal.jpg);
+  background-image: url(/img/principal.jpg);
+  height: 60rem;
+  background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70rem;
 }
 
 /* Categorias */
-.contenedor-categorias h2 {
-  text-align: center;
-}
-.categorias {
+.contenedor-categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .categoria a {
-  padding: 2rem;
-  text-align: center;
   display: block;
+  text-align: center;
+  padding: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 .categoria a:hover {
-  background-color: rgb(127, 127, 247);
+  background-color: rgb(70, 70, 243);
   color: white;
 }

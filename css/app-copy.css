@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Titulo */
+h1 {
+  color: rgb(127, 127, 247);
+  text-align: center;
+}
+h1 span {
+  color: black;
+}
+
+/* Contenedor */
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Navegador Principal */
+.contenedor-nav-principal {
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.333);
+  padding: 2rem 0;
+}
+.nav-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* hero */
+.hero {
+  background-image: url(../img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70rem;
+}
+
+/* Categorias */
+.contenedor-categorias h2 {
+  text-align: center;
+}
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.categoria a {
+  padding: 2rem;
+  text-align: center;
+  display: block;
+}
+.categoria a:hover {
+  background-color: rgb(127, 127, 247);
+  color: white;
+}
