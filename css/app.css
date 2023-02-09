@@ -68,3 +68,13 @@ h1 span {
   background-color: rgb(70, 70, 243);
   color: white;
 }
+
+/* Sobre nosotros */
+.sobre-nosotros {
+  background-image: linear-gradient(
+    to right,
+    url('../img/nosotros.jpg'),
+    url('../img/nosotros.jpg'),
+    blue 100%
+  );
+}
