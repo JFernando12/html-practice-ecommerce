@@ -78,3 +78,14 @@ h1 span {
     blue 100%
   );
 }
+
+/* Products */
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.producto:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
